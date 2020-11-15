@@ -18,10 +18,10 @@ var B = "\"Twas the night before christmas" //Assigning a variable then concaten
 document.write(B); // Printed the variable
 
 var family = "The Hillyards", Dad="Judd", Mom="Tara", Sister1="Tayli", Sister2="Abigial"; //Assigned mulitple variables
-var Dad= Dad.fontcolor("red")
-var Mom= Mom.fontcolor("pink")
-var Sister1= Sister1.fontcolor("Green")
-var Sister2= Sister2.fontcolor("purple")
-document.write(Mom)
+var Dad= Dad.fontcolor("red") //Assigned color to Dad
+var Mom= Mom.fontcolor("pink") //Assigned color to Mom
+var Sister1= Sister1.fontcolor("Green") //Assigned color to Sister1
+var Sister2= Sister2.fontcolor("purple") //Assigned color to Sister2
+document.write(Mom) //Printed Mom
 
-document.write(3+4)
+document.write(3+4) //First expression
