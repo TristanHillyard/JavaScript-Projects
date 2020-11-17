@@ -8,5 +8,5 @@ function myFunction() {
     var sentence = "I am learning";
     sentence += " a lot from this course!";
     document.getElementById("change").innerHTML = sentence;
-} //
+} // Concatenated function, linked to click here. 
 
