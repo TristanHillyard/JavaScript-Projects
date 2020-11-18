@@ -49,3 +49,17 @@ function voter() {
     }
     document.getElementById("your_Age").innerHTML = Vote;
 }//If else statement. Depending on your age is if you can vote or not
+
+function Time_Function() {
+    var Time = new Date().getHours();
+    var Reply;
+    if (Time < 12 == Time > 0) {
+        Reply = "It is the morning time.";
+    }
+    else if (Time > 12 == Time < 18) {
+        Reply = "It is the afternoon.";
+    }
+    else {
+        Reply = "It is evening time.";
+    }
+}
