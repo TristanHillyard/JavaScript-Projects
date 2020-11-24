@@ -80,34 +80,34 @@ function Update_Display() {
 
 Update_Display();
 //this section monitors button clicks
-const keys = document.querySelector('calculator-keys');
-keys.addEventListener('click', function (event) {
-        //the target variable is an object that represents the element
-        //that was clicked
-        const { target } = event;
-        //if the element that was clicked on is not a button, exit the function
-        if (!target.matches('button')) {
-            return;
-        }
+const keys = document.querySelector('.calculator-keys');
+keys.addEventListener('click', (event) => {
+    //the target variable is an object that represents the element
+    //that was clicked
+    const { target } = event;
+    //if the element that was clicked on is not a button, exit the function
+    if (!target.matches('button')) {
+        return;
+    }
 
-        if (target.classList.contains('operator')) {
-            Handle_Operator(target.value);
-            Update_Display();
-            return;
-        }
-
-        if (target.classList.contains('decimal')) {
-            Input_Decimal(target.value);
-            Update_Display();
-            return;
-        }
-        //ensures the AC clears the numbers from the calculator
-        if (target.classList.contains('all-clear')) {
-            Calculator_Reset();
-            Update_Display();
-            return;
-        }
-
-        Input_Digit(target.value);
+    if (target.classList.contains('operator')) {
+        Handle_Operator(target.value);
         Update_Display();
-    })
+        return;
+    }
+
+    if (target.classList.contains('decimal')) {
+        Input_Decimal(target.value);
+        Update_Display();
+        return;
+    }
+    //ensures the AC clears the numbers from the calculator
+    if (target.classList.contains('all-clear')) {
+        Calculator_Reset();
+        Update_Display();
+        return;
+    }
+
+    Input_Digit(target.value);
+    Update_Display();
+})
