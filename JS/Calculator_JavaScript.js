@@ -102,7 +102,7 @@ keys.addEventListener('click', (event) => {
         return;
     }
     //ensures the AC clears the numbers from the calculator
-    if (target.classList.contains('all-clear')) {
+    if (target.classList.contains('.all-clear')) {
         Calculator_Reset();
         Update_Display();
         return;
